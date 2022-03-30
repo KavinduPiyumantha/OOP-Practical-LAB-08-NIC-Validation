@@ -80,7 +80,7 @@ public class IDValidation {
                                                  }
                                                  
                                                  //System.out.println(febdates );
-                                                 System.out.print("This Id  is a Correct Old ID \n");
+                                                 System.out.print("\nThis Id  is a Correct Old Version NIC \n");
                                                  
                                                  System.out.print("Birth Year : 19"+Year+"\n");
                                                  
@@ -121,7 +121,6 @@ public class IDValidation {
 
                                     boolean digitStatus = false ;
 
-                                        //if(id.endsWith("V") || id.endsWith("v")){ //last letter check
 
                                             //System.out.print("Last Character is v \n");
 
@@ -171,7 +170,7 @@ public class IDValidation {
                                                  }
                                                  
                                                  //System.out.println(febdates );
-                                                 System.out.print("This Id  is a Correct New ID \n");
+                                                 System.out.print("\nThis Id  is a Correct New Version NIC \n");
                                                  
                                                  System.out.print("Birth Year : "+Year+"\n");
                                                  
@@ -202,26 +201,15 @@ public class IDValidation {
                                         }else{    
                                                 System.out.print("First all 9 Characters are not Numbers \n\n");
                                         }
-
-//                                        }else{
-//                                                    System.out.print("Last Character is not a v \n");
-//                                         }                                
+                              
                              }
                     }else{
-                                errorMassage();
+                                 System.out.print("Wrong Id Lentgth \n\n");
                     }
-        }//while loop tkps
+        }         //while loop close tkps
     
-    }//main
-    
-    
-            
-        public static void errorMassage(){
-            
-            System.out.print("Wrong Id Lentgth \n\n");
-        }
-        
-        
+    }         //main close
+   
         public static void monthDate(int nfebdates, int ndates){
             int febdates =nfebdates;
             int dates=ndates;
